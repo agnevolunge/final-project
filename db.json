@@ -1,9 +1,103 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+    "nationalParks": [
+      { 
+        "id": 1, 
+        "title": "Yellowstone National Park",
+        "body": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic features. Within Yellowstone's 2.2 million acres, visitors have unparalleled opportunities to observe wildlife in an intact ecosystem, explore geothermal areas that contain about half the world’s active geysers, and view geologic wonders like the Grand Canyon of the Yellowstone River.", 
+        "country": "USA", 
+        "continent": "North America", 
+         "attractions": [
+            "Old Faithful Geyser", 
+            "Grand canyon of the Yellowstone",
+            "Natural Wonders"
+         ], 
+         "photoUrl": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/10/Grand-Prismatic-Spring-Yellowstone-National-Park-ss30102017.jpgs"
+        },
+
+       {
+        "id": 2, 
+        "title": "Wild Taiga National Park",
+        "body": "Wild Taiga, located on Finlands eastern border, is a perfect example of rich tradition and strong culture. Evergreen forests, aapa bogs, clean water and rich wildlife form the second important part of Kuhmo and Suomussalmi.", 
+        "country": "Finland", 
+        "continent": "Europe", 
+        "attractions": [
+          "Snowshoeing In The Taiga Forest", 
+          "A 4-Day Husky Adventure",
+          "Berry Picking"
+        ], 
+        "photoUrl": "https://wildtaiga.fi/wp-content/uploads/2018/04/cat-landscape-winter-photography-finland.jpg"
+       },
+         
+       {
+        "id": 3, 
+        "title": "Göreme National Park",
+        "body": "In a spectacular landscape, entirely sculpted by erosion, the Göreme valley and its surroundings contain rock-hewn sanctuaries that provide unique evidence of Byzantine art in the post-Iconoclastic period. Dwellings, troglodyte villages and underground towns the remains of a traditional human habitat dating back to the 4th century can also be seen there.", 
+        "country": "Turkey", 
+        "continent": "Europe", 
+        "attractions": [
+          "Sunrise Hot air ballon tour", 
+          "Camel Safari",
+          "Star gaizinn camping"
+        ], 
+        "photoUrl": "https://traveler.marriott.com/wp-content/uploads/2022/04/Goreme-National-Park-GettyImages-688057449.jpg"
+       },
+        
+       {
+        "id": 4, 
+        "title": "Plitvice Lakes National Park",
+        "body": "Plitvice Lakes National Park is one of the most beautiful collections of colorful lakes and waterfalls, Croatia's leading attraction.", 
+        "country": "Croatia", 
+        "continent": "Europe", 
+        "attractions": [
+          "Hiking", 
+          "Private Guided Walking Tour",
+          "The Lower Lakes"
+        ], 
+        "photoUrl": "https://www.visit-croatia.co.uk/wp-content/uploads/2017/12/exploring-the-plitivce-lakes.jpg" 
+       }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+    
+    "Country": [
+      {
+       "id": 1,
+       "name": "Croatia", 
+       "nationalParkId": 4, 
+       "continent": "Europe"      
+      },
+      {
+       "id": 2,
+       "name": "USA", 
+       "nationalParkId": 1, 
+       "continent": "North America"      
+      },
+      {
+       "id": 3,
+       "name": "Turkey", 
+       "nationalParkId": 3, 
+       "continent": "Europe"      
+      }, 
+      {
+       "id": 4,
+       "name": "Finland", 
+       "nationalParkId": 2, 
+       "continent": "Europe"      
+      }
+    ], 
+
+    "Continent": [
+      {
+       "id": 1,
+       "name": "Europe", 
+       "CountryId": [1, 3, 4], 
+       "NationalParkId": [2, 3, 4]
+      },
+        
+      {
+        "id": 2,
+        "name": "North America", 
+        "CountryId": 2, 
+        "NationalParkId": 1
+       } 
+    ]
+
   }
