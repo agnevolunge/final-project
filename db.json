@@ -54,6 +54,44 @@
           "The Lower Lakes"
         ], 
         "photoUrl": "https://www.visit-croatia.co.uk/wp-content/uploads/2017/12/exploring-the-plitivce-lakes.jpg" 
+       }, 
+
+       {
+        "id": 5, 
+        "title": "Death Valley National Park",
+        "body": "The Southern California desert is home to the Death Valley National Park. It is famous for exotic animals, including salt creek and migratory birds. The dunes also stand out as they come in different colors depending on the time of the day and year.", 
+        "country": "USA", 
+        "continent": "North America", 
+        "attractions": [
+          "Trekking" 
+        ], 
+        "photoUrl": "https://heymondo.com/blog/wp-content/uploads/2023/02/Death-Valley.jpg" 
+       }, 
+       {
+        "id": 6, 
+        "title": "Jasper National Park",
+        "body": "One of Canada's wildest places, Jasper National Park provides kaleidoscopic panoramas at every turn. Travelers can marvel at many views as they trek from the peaks of Mount Edith Cavell to the caverns of Maligne Canyon.", 
+        "country": "Canada", 
+        "continent": "North America", 
+        "attractions": [
+          "Maligne Lake", 
+          "Jasper SkyTram" 
+        ], 
+        "photoUrl": "https://travel.usnews.com/dims4/USNEWS/3e1092a/2147483647/resize/976x652%5E%3E/crop/976x652/quality/85/?url=https%3A%2F%2Ftravel.usnews.com%2Fimages%2Fgettyimages-188079842_Hk2xwRP.jpg" 
+       }, 
+
+       {
+        "id": 7, 
+        "title": "Banff National Park",
+        "body": "Banff National Park is located in southern Alberta along the shared border with British Columbia in the Canadian Rocky Mountains. This is the same range of mountains that extend down into Colorado and Rocky Mountains National Park. Serving as the Ambassador Park of Canada.", 
+        "country": "Canada", 
+        "continent": "North America", 
+        "attractions": [
+          "Lake Louise", 
+          "Moraine Lake and Valley of the Ten Peaks", 
+           "Peyto Lake"
+        ], 
+        "photoUrl": "https://nationalparks-15bc7.kxcdn.com/images/parks/banff/Banff%20National%20Park%20peyto%20lake.jpg" 
        }
     ],
     
@@ -81,7 +119,13 @@
        "name": "Finland", 
        "nationalParkId": 2, 
        "continent": "Europe"      
-      }
+      },
+      {
+        "id": 5,
+        "name": "Canada", 
+        "nationalParkId": 6, 
+        "continent": "North America"      
+       }
     ], 
 
     "Continent": [
@@ -98,6 +142,177 @@
         "CountryId": 2, 
         "NationalParkId": 1
        } 
-    ]
+    ],
 
+    "Albums": [
+      {
+        "nationalParkId": 7,
+        "id": 1,
+        "title": "Banff National Park Gallery"
+      }, 
+
+      {
+        "nationalParkId": 6,
+        "id": 2,
+        "title": "Jasper National Park Gallery"
+      }, 
+
+      {
+        "nationalParkId": 5,
+        "id": 3,
+        "title": "Death Valley National Park Gallery"
+      }, 
+
+      {
+        "nationalParkId": 4,
+        "id": 4,
+        "title": "Plitvice Lakes National Park Gallery"
+      }, 
+
+      {
+        "nationalParkId": 3,
+        "id": 5,
+        "title": "Göreme National Park Gallery"
+      }, 
+
+      {
+        "nationalParkId": 2,
+        "id": 6,
+        "title": "Wild Taiga National Park Gallery"
+      }, 
+
+      {
+        "nationalParkId": 1,
+        "id": 7,
+        "title": "Yellowstone National Park Gallery"
+      }
+    ], 
+    "Photos": [
+      {
+        "albumId": 1,
+        "id": 1,
+        "title": "Banff national park bear", 
+        "url": "https://nationalparks-15bc7.kxcdn.com/images/parks/banff/Banff%20National%20Park%20black%20bear.jpg"
+      }, 
+      {
+        "albumId": 1,
+        "id": 2,
+        "title": "Banff national park lake", 
+        "url": "https://nationalparks-15bc7.kxcdn.com/images/parks/banff/Banff%20National%20Park%20jasper%20lake.jpg"
+      }, 
+      {
+        "albumId": 1,
+        "id": 3,
+        "title": "Banff national park Morraine lake", 
+        "url": "https://nationalparks-15bc7.kxcdn.com/images/parks/banff/Banff%20National%20Park%20morraine%20lake.jpg"
+      },
+      {
+        "albumId": 2,
+        "id": 4,
+        "title": "Jasper National Park Pyramid lake", 
+        "url": "https://inafarawayland.com/wp-content/uploads/2022/04/Pyramid-Lake-6.jpg"
+      },
+      {
+        "albumId": 2,
+        "id": 5,
+        "title": "Jasper National Park Medicine lake", 
+        "url": "https://inafarawayland.com/wp-content/uploads/2022/04/Medicine-Lake-1.jpg"
+      },
+      {
+        "albumId": 2,
+        "id": 6,
+        "title": "Jasper National Park lake and mountain", 
+        "url": "https://inafarawayland.com/wp-content/uploads/2022/03/Edith-Cavell-Meadows-1.jpg"
+      },
+      {
+        "albumId": 3,
+        "id": 7,
+        "title": "Death Valley National Park Mountain", 
+        "url": "https://www.oasisatdeathvalley.com/content/uploads/2017/10/deathvalleyMountainReflect-890x580.jpg"
+      },
+      {
+        "albumId": 3,
+        "id": 8,
+        "title": "Death Valley National Park Crater", 
+        "url": "https://www.oasisatdeathvalley.com/content/uploads/2017/10/Death-Valley-Ubehebe-Crater-2-890x580.jpg"
+      },
+      {
+        "albumId": 3,
+        "id": 9,
+        "title": "Death Valley National Park dry lake", 
+        "url": "https://www.oasisatdeathvalley.com/content/uploads/2017/10/Racetrack-Playa-Dana-McMullen-890x580.jpg"
+      },
+      {
+        "albumId": 4,
+        "id": 10,
+        "title": "Plitvice Lakes National Park lakes", 
+        "url": "https://www.touropia.com/gfx/b/2016/02/plitvice_lakes_15.jpg"
+      },
+      {
+        "albumId": 4,
+        "id": 11,
+        "title": "Plitvice Lakes National Park lakes in autumn", 
+        "url": "https://www.touropia.com/gfx/b/2016/02/plitvice_lakes_4.jpg"
+      },
+      {
+        "albumId": 4,
+        "id": 12,
+        "title": "Plitvice Lakes National Park falls", 
+        "url": "https://www.touropia.com/gfx/b/2016/02/plitvice_lakes_8.jpg"
+      },
+      {
+        "albumId": 5,
+        "id": 13,
+        "title": "Göreme National Park uchistar", 
+        "url": "https://cdn.goturkiye.com/cappadocia/1-uchisar.jpg"
+      },
+      {
+        "albumId": 5,
+        "id": 14,
+        "title": "Göreme National Park uchistar", 
+        "url": "https://cdn.goturkiye.com/cappadocia/1-uchisar.jpg"
+      },
+      {
+        "albumId": 5,
+        "id": 15,
+        "title": "Göreme National Park ortahisar castle", 
+        "url": "https://cdn.goturkiye.com/cappadocia/1-ortahisar-castle.jpg"
+      },
+      {
+        "albumId": 6,
+        "id": 16,
+        "title": "Wild Taiga National Park kayaking", 
+        "url": "https://www.discoveringfinland.com/wp-content/uploads/2021/02/hossan-kansallispuisto-3.jpg"
+      },
+      {
+        "albumId": 6,
+        "id": 17,
+        "title": "Wild Taiga National Park two bears", 
+        "url": "https://www.discoveringfinland.com/wp-content/uploads/2021/02/Bears_Ilkka_Niskanen.jpg"
+      },
+      {
+        "albumId": 6,
+        "id": 18,
+        "title": "Wild Taiga National Park in winter", 
+        "url": "https://scanmagazine.co.uk/content/uploads/2022/08/Wild-Taiga_08_Snowy-trees-and-a-person_Lassi-Rautiainen.jpg"
+      },
+      {
+        "albumId": 7,
+        "id": 19,
+        "title": "Yellowstone National Park falls", 
+        "url": "https://takinginthesights.com/wp-content/uploads/2017/04/lower-yellowstone-falls.jpg"
+      },
+      {
+        "albumId": 7,
+        "id": 20,
+        "title": "Yellowstone National Park geysir", 
+        "url": "https://takinginthesights.com/wp-content/uploads/2017/04/norris-geysir-basin.jpg"
+      },
+      {
+        "albumId": 7,
+        "id": 21,
+        "title": "Yellowstone National Park river", 
+        "url": "https://takinginthesights.com/wp-content/uploads/2017/04/fishing-at-the-firehole-river.jpg"
+      }
+    ]
   }
