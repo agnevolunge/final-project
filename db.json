@@ -4,22 +4,18 @@
         "id": 1, 
         "title": "Yellowstone National Park",
         "body": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic features. Within Yellowstone's 2.2 million acres, visitors have unparalleled opportunities to observe wildlife in an intact ecosystem, explore geothermal areas that contain about half the world’s active geysers, and view geologic wonders like the Grand Canyon of the Yellowstone River.", 
-        "country": "USA", 
-        "continent": "North America", 
          "attractions": [
             "Old Faithful Geyser", 
             "Grand canyon of the Yellowstone",
             "Natural Wonders"
          ], 
-         "photoUrl": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/10/Grand-Prismatic-Spring-Yellowstone-National-Park-ss30102017.jpgs"
+         "photoUrl": "https://img.traveltriangle.com/blog/wp-content/uploads/2017/10/Grand-Prismatic-Spring-Yellowstone-National-Park-ss30102017.jpg"
         },
 
        {
         "id": 2, 
         "title": "Wild Taiga National Park",
         "body": "Wild Taiga, located on Finlands eastern border, is a perfect example of rich tradition and strong culture. Evergreen forests, aapa bogs, clean water and rich wildlife form the second important part of Kuhmo and Suomussalmi.", 
-        "country": "Finland", 
-        "continent": "Europe", 
         "attractions": [
           "Snowshoeing In The Taiga Forest", 
           "A 4-Day Husky Adventure",
@@ -32,8 +28,6 @@
         "id": 3, 
         "title": "Göreme National Park",
         "body": "In a spectacular landscape, entirely sculpted by erosion, the Göreme valley and its surroundings contain rock-hewn sanctuaries that provide unique evidence of Byzantine art in the post-Iconoclastic period. Dwellings, troglodyte villages and underground towns the remains of a traditional human habitat dating back to the 4th century can also be seen there.", 
-        "country": "Turkey", 
-        "continent": "Europe", 
         "attractions": [
           "Sunrise Hot air ballon tour", 
           "Camel Safari",
@@ -46,8 +40,6 @@
         "id": 4, 
         "title": "Plitvice Lakes National Park",
         "body": "Plitvice Lakes National Park is one of the most beautiful collections of colorful lakes and waterfalls, Croatia's leading attraction.", 
-        "country": "Croatia", 
-        "continent": "Europe", 
         "attractions": [
           "Hiking", 
           "Private Guided Walking Tour",
@@ -60,8 +52,6 @@
         "id": 5, 
         "title": "Death Valley National Park",
         "body": "The Southern California desert is home to the Death Valley National Park. It is famous for exotic animals, including salt creek and migratory birds. The dunes also stand out as they come in different colors depending on the time of the day and year.", 
-        "country": "USA", 
-        "continent": "North America", 
         "attractions": [
           "Trekking" 
         ], 
@@ -71,8 +61,6 @@
         "id": 6, 
         "title": "Jasper National Park",
         "body": "One of Canada's wildest places, Jasper National Park provides kaleidoscopic panoramas at every turn. Travelers can marvel at many views as they trek from the peaks of Mount Edith Cavell to the caverns of Maligne Canyon.", 
-        "country": "Canada", 
-        "continent": "North America", 
         "attractions": [
           "Maligne Lake", 
           "Jasper SkyTram" 
@@ -84,8 +72,6 @@
         "id": 7, 
         "title": "Banff National Park",
         "body": "Banff National Park is located in southern Alberta along the shared border with British Columbia in the Canadian Rocky Mountains. This is the same range of mountains that extend down into Colorado and Rocky Mountains National Park. Serving as the Ambassador Park of Canada.", 
-        "country": "Canada", 
-        "continent": "North America", 
         "attractions": [
           "Lake Louise", 
           "Moraine Lake and Valley of the Ten Peaks", 
@@ -95,40 +81,77 @@
        }
     ],
     
-    "Country": [
+    "countries": [
       {
        "id": 1,
        "name": "Croatia", 
        "nationalParkId": 4, 
-       "continent": "Europe"      
+       "continent": "Europe", 
+       "topNationalParks": [
+          "Plitvice National Park",
+          "Krka National Park",
+          "Mljet National Park",
+          "Kornati National Park",
+          "Brijuni National Park"
+       ]      
       },
+       
       {
        "id": 2,
        "name": "USA", 
        "nationalParkId": 1, 
-       "continent": "North America"      
+       "continent": "North America", 
+       "topNationalParks": [
+          "Yellowstone National Park", 
+          "Zion National Park",
+          "Yosemite National Park", 
+          "Grand Canyon National Park", 
+          "Big Bend National Park"
+       ]     
       },
+
       {
        "id": 3,
        "name": "Turkey", 
        "nationalParkId": 3, 
-       "continent": "Europe"      
+       "continent": "Europe", 
+       "topNationalParks": [
+        "Camlik Milli Park",
+        "Kartepe Aslantas Milli Park",
+        "Soguksu Milli Park",
+        "Kus Cenneti Milli Park",
+        "Uludag Milli Park"
+       ]     
       }, 
       {
        "id": 4,
        "name": "Finland", 
        "nationalParkId": 2, 
-       "continent": "Europe"      
+       "continent": "Europe", 
+       "topNationalParks": [
+          "Nuuksio National Park",
+          "Oulanga National Park",
+          "Repovesi National Park",
+          "Sipoonkorpi National Park",
+          "Urho Kekkonen National Park"
+       ]      
       },
       {
         "id": 5,
         "name": "Canada", 
         "nationalParkId": 6, 
-        "continent": "North America"      
+        "continent": "North America", 
+        "topNationalParks": [
+          "Banff National Park",
+          "Jasper National Park",
+          "Yoho National Park",
+          "Waterton Lakes National Park",
+          "Kootenay National Park"
+        ]      
        }
     ], 
 
-    "Continent": [
+    "continent": [
       {
        "id": 1,
        "name": "Europe", 
@@ -144,7 +167,7 @@
        } 
     ],
 
-    "Albums": [
+    "albums": [
       {
         "nationalParkId": 7,
         "id": 1,
@@ -187,7 +210,7 @@
         "title": "Yellowstone National Park Gallery"
       }
     ], 
-    "Photos": [
+    "photos": [
       {
         "albumId": 1,
         "id": 1,
