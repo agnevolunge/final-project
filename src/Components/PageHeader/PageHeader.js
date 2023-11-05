@@ -14,7 +14,7 @@ const PageHeader = () => {
                         <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/national-parks">National Parks</NavLink>
+                        <NavLink to="/nationalParks">National Parks</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="/countries">Where to go</NavLink>

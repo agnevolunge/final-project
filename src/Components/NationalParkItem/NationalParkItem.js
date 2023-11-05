@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const NationalParkItem = (props) => {
     const { id, title, body, photoUrl, attractions } = props.data
-    console.log(title, body, photoUrl, attractions)
+    
   
   let attractionsElement = ''
 
@@ -22,7 +22,7 @@ const NationalParkItem = (props) => {
   
     return (
      <li className="park-item">
-        <Link className="park-title" to={`/nationalParks/1`}>{title}</Link>
+        <Link className="park-title" to={`/nationalParks/${id}`}>{title}</Link>
         <p className="park-description">{body}</p>
         <img src={photoUrl} alt="" key={id}/>
         <span>{attractionsElement}</span>
