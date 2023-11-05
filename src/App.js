@@ -7,6 +7,7 @@ import CountriesPage from './Pages/CountriesPage/CountriesPage';
 import AlbumsPage from './Pages/AlbumsPage/AlbumsPage';
 import NationalParkPage from './Pages/NationalParkPage/NationalParkPage';
 import AlbumPage from './Pages/AlbumPage/AlbumPage';
+import CountryPage from './Pages/CountryPage/CountryPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/nationalParks/:id" element={<NationalParkPage />} /> 
 
         <Route path="/countries" element={<CountriesPage />} /> 
+        <Route path="/countries/:id" element={<CountryPage />} /> 
         
         <Route path="/albums" element={<AlbumsPage />} /> 
         <Route path="/albums/:id" element={<AlbumPage />} /> 
