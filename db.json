@@ -100,7 +100,8 @@
           "Mljet National Park",
           "Kornati National Park",
           "Brijuni National Park"
-       ]      
+       ], 
+       "countryMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918017.488195652!2d13.767642617111724!3d44.42031046997214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133441080add95ed%3A0xa0f3c024e1661b7f!2sKroatija!5e0!3m2!1slt!2slt!4v1699254907400!5m2!1slt!2slt"
       },
        
       {
@@ -114,7 +115,8 @@
           "Yosemite National Park", 
           "Grand Canyon National Park", 
           "Big Bend National Park"
-       ]     
+       ], 
+       "countryMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47681198.93769774!2d-161.3652026357663!3d38.32733122637569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sJungtin%C4%97s%20Valstijos!5e0!3m2!1slt!2slt!4v1699256740298!5m2!1slt!2slt"
       },
 
       {
@@ -128,8 +130,10 @@
         "Soguksu Milli Park",
         "Kus Cenneti Milli Park",
         "Uludag Milli Park"
-       ]     
+       ], 
+       "countryMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12767301.965154178!2d24.5552538!3d38.6254881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2sTurkija!5e0!3m2!1slt!2slt!4v1699256649585!5m2!1slt!2slt"     
       }, 
+
       {
        "id": 4,
        "name": "Finland", 
@@ -141,8 +145,10 @@
           "Repovesi National Park",
           "Sipoonkorpi National Park",
           "Urho Kekkonen National Park"
-       ]      
+       ], 
+       "countryMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301781.613757296!2d6.349162647802688!3d63.46126834748641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2sSuomija!5e0!3m2!1slt!2slt!4v1699256895077!5m2!1slt!2slt"    
       },
+
       {
         "id": 5,
         "name": "Canada", 
@@ -154,7 +160,8 @@
           "Yoho National Park",
           "Waterton Lakes National Park",
           "Kootenay National Park"
-        ]      
+        ], 
+        "countryMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42910635.262908846!2d-135.32535227649507!3d48.97143310570093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sKanada!5e0!3m2!1slt!2slt!4v1699256808087!5m2!1slt!2slt"     
        }
     ], 
 
@@ -217,6 +224,7 @@
         "title": "Yellowstone National Park Gallery"
       }
     ], 
+    
     "photos": [
       {
         "albumId": 1,

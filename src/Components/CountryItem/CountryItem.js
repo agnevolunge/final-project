@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const CountryItem = (props) => {
-    const { id, continent, name, nationalParks, topNationalParks } = props.data
+    const { id, continent, name, topNationalParks } = props.data
 
     let topNationalParksElement = ''
 

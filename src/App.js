@@ -15,7 +15,7 @@ function App() {
       <PageHeader/>
 
       <Routes>
-        <Route path="/" element={<HomePage />} /> 
+        <Route path="/home" element={<HomePage />} /> 
 
         <Route path="/nationalParks" element={<NationalParksPage />} /> 
         <Route path="/nationalParks/:id" element={<NationalParkPage />} /> 
