@@ -8,6 +8,7 @@ const NationalParkPage = () => {
     const { id } = useParams()
 
     const [nationalPark, setNationalPark] = useState(null)
+    const [parkDeleted, setParkDeleted] = useState(false)
 
     useEffect(() => {
         async function fetchNationalPark() {
@@ -24,18 +25,38 @@ const NationalParkPage = () => {
         return ''
     }
 
+    const removeParkHandler = () => {
+        fetch(`${SERVER}/nationalParks/${id}`, {
+          method: 'DELETE',
+        }) 
+        setParkDeleted(true)
+      }
 
   return (
     <Container>
-        <div className="park-wrapper">
-            <img src={nationalPark.photoUrl} alt="" key={id}></img>
-            <h1>{nationalPark.title}</h1>
-            <p>{nationalPark.body}</p>
-        </div>
+        {parkDeleted ? (
+          <>
+            <p> Park was deleted </p>
+            <Link to="/nationalParks">Go back to National Parks List</Link>
+          </>
+        ) : (
+          <>
+            <div className="park-wrapper">
+              <img src={nationalPark.photoUrl} alt="" key={id}></img>
+              <h1>{nationalPark.title}</h1>
+              <p>{nationalPark.body}</p>
+            </div>
+        
         <Link to={'/nationalParks'}>Go back to National Parks List</Link>
+        
+        <div className="delete-button">
+            <button onClick={removeParkHandler}>Delete National Park</button>
+        </div>
+       
+          </>
+        )}
     </Container>
-    
-  )
+   )
 }
 
 export default NationalParkPage

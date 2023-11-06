@@ -8,6 +8,8 @@ import AlbumsPage from './Pages/AlbumsPage/AlbumsPage';
 import NationalParkPage from './Pages/NationalParkPage/NationalParkPage';
 import AlbumPage from './Pages/AlbumPage/AlbumPage';
 import CountryPage from './Pages/CountryPage/CountryPage';
+import PageFooter from './Components/PageFooter/PageFooter';
+import CreateNationalParkPage from './Pages/CreateNationalParkPage/CreateNationalParkPage';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
 
         <Route path="/nationalParks" element={<NationalParksPage />} /> 
         <Route path="/nationalParks/:id" element={<NationalParkPage />} /> 
+        <Route path="/createPark" element={<CreateNationalParkPage />} /> 
 
         <Route path="/countries" element={<CountriesPage />} /> 
         <Route path="/countries/:id" element={<CountryPage />} /> 
@@ -28,6 +31,8 @@ function App() {
         
         <Route path="*" element={<h1>404: Page not found</h1>} /> 
       </Routes>
+      
+      <PageFooter />
     </div>
    
   );

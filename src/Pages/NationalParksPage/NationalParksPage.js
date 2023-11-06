@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Container from '../../Components/Container/Container'
 import { SERVER } from '../../config'
 import NationalParksList from '../../Components/NationalParksList/NationalParksList'
+import { Link } from 'react-router-dom'
+import "./NationalParksPage.css"
 
 
 const NationalParksPage = () => {
@@ -21,10 +23,12 @@ const NationalParksPage = () => {
 
 return (
     <Container>
+      <Link to="/createPark">Create new National Park</Link>
       <h1>National Parks:</h1>
       <div className="parks-wrapper">
       
         <NationalParksList nationalParks={nationalParks} />
+      
       </div>
        
     </Container>
