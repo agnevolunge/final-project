@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Container from '../../Components/Container/Container'
 import { SERVER } from '../../config'
+import "./CreateNationalParkPage.css"
 
 const CreateNationalParkPage = () => {
 
@@ -71,10 +72,10 @@ const CreateNationalParkPage = () => {
         }
 
         if (!body) {
-            setBodyError("Body is required");
+            setBodyError("Description is required");
             formIsValid = false;
           } else if (body.length < 10) {
-            setBodyError("Body must be at least 3 characters long");
+            setBodyError("Description must be at least 3 characters long");
             formIsValid = false;
           }
 
@@ -88,9 +89,9 @@ const CreateNationalParkPage = () => {
     <Container>
         <h1>Create new National Park</h1>
 
-        <form onSubmit={newParkHandler}>
+        <form id="park-form" onSubmit={newParkHandler}>
             <div className="form-control">
-                <label htmlFor="title">National Park Title</label>
+                <label htmlFor="title">National Park Title:</label>
                 <input
                 type="text"
                 name="title"
@@ -98,21 +99,25 @@ const CreateNationalParkPage = () => {
                 value={title}
                 onChange={titleHandler}
                 />
+                <span className="title-error-message">{titleError}</span>
             </div>
 
             <div className="form-control">
-              <label htmlFor="body">National Park Description </label>
+              <label htmlFor="body">National Park Description:</label>
                 <textarea 
+                  rows={5}
                   name="body" 
                   id="body"
                   value={body}
                   onChange={bodyHandler}
                 />
+                <span className="body-error-message">{bodyError}</span>
             </div>
 
             <div className="form-control">
               <label htmlFor="attractions">National Park Attractions:</label>
                <textarea
+                 rows={5}
                  id="attractions"
                  name="attractions"
                  value={parkAttractions.join(", ")}
@@ -120,7 +125,7 @@ const CreateNationalParkPage = () => {
                />
             </div>
 
-            <button type="submit">Create</button> 
+            <button className="create-park-btn" type="submit">Create National Park</button> 
 
             {invalidForm && (
               <div className="error-wrapper">
