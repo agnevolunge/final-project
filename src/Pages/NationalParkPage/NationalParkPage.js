@@ -52,9 +52,6 @@ const NationalParkPage = () => {
               <Link className={styles.goBackLink} to={'/nationalParks'}>Go back to National Parks List</Link>
               <button className={styles.deleteBtn} onClick={removeParkHandler}>Delete National Park</button>
             </div>
-           
-            
-       
           </>
         )}
     </Container>

@@ -1,22 +1,22 @@
 import { Link } from 'react-router-dom'
 import Container from '../../Components/Container/Container'
-import "./HomePage.css"
+import styles from './HomePage.module.css'
 
 
 const HomePage = () => {
 
   return (
     <Container>
-      <div className="img-wrapper">
+      <div className={styles.imgWrapper}>
         <img src="https://selectregistry.com/wp-content/uploads/2018/05/things-to-do-in-jackson-hole-wymoing-in-the-summer-1920x650.jpg" alt="summer"/>
       </div>
-      <h1>National Parks Page</h1>
+      <h1 className={styles.homePageTitle}>National Parks Page</h1>
       
       <p>National parks exist all over the globe, a true testament to the power and wonder of nature. In fact, in the entire world there are 6555 national parks, which are mostly undeveloped stretches of land. These vital, protected parklands hold within them some of the most incredible natural occurrences, including mountains, canyons, waterfalls and forestlands, not to mention the plethora of wildlife who make these breath-taking places their home.</p>
 
-    <div className="cards-wrapper">
-      <div className="reasons-wrapper">
-        <h2>8 reasons you should visit more National Parks! </h2>
+    <div className={styles.cardsWrapper}>
+      <div className={styles.reasonsWrapper}>
+        <h3 className={styles.reasonsWrapperTitle}>8 reasons you should visit more National Parks! </h3>
           <ol>
             <li>Cost-friendly</li>
             <li>Easily Accessible</li>
@@ -30,8 +30,8 @@ const HomePage = () => {
       </div>
        
 
-      <div className="parks-list-wrapper">
-        <h3>In this page you will find 7 National Parks in 5 different countries. Start Your Yourney here! </h3>
+      <div className={styles.parksListWrapper}>
+        <h3 className={styles.parksListWrapperTitle}>In this page you will find 7 National Parks in 5 different countries. Start Your Yourney here! </h3>
           <div>
             <Link to={'/nationalParks/1'}>Yellowstone National Park</Link>
           </div>

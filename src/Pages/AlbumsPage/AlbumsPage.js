@@ -29,20 +29,19 @@ const AlbumsPage = () => {
   return (
     <Container>
         <div className={styles.albumsWrapper}>
-        <ul className={styles.albumsList}>
-          {albums.map((album) => (
-            <li key={albums.id} className={styles.albumsItem}>
-             <Link className={styles.albumTitle} to={`/albums/${album.id}`}>{album.title}</Link>  
-              <div className={styles.randomImage}>
-               <Link to={`/albums/${album.id}`}>
-                <img className={styles.albumCoverImg} src={album.photos[0].url} alt="" key={album.id} />
-               </Link>
-              </div>
-             
-            </li>
-          ))}
-        </ul>
-
+          <ul className={styles.albumsList}>
+            {albums.map((album) => (
+              <li key={albums.id} className={styles.albumsItem}>
+                <Link className={styles.albumTitle} to={`/albums/${album.id}`}>{album.title}</Link>  
+                
+                <div className={styles.randomImage}>
+                  <Link to={`/albums/${album.id}`}>
+                    <img className={styles.albumCoverImg} src={album.photos[0].url} alt="" key={album.id} />
+                  </Link>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
     </Container>
     

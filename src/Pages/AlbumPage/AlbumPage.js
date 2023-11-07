@@ -9,6 +9,7 @@ const AlbumPage = () => {
     const { id } = useParams()
 
     const [album, setAlbum] = useState(null)
+    const [albumDeleted, setAlbumDeleted] = useState(false)
 
     useEffect(() => {
         const fetchAlbum = async () => {
@@ -28,21 +29,38 @@ const AlbumPage = () => {
           </Container>
         )
     }
+    const removeAlbumHandler = () => {
+      fetch(`${SERVER}/albums/${id}`, {
+        method: 'DELETE',
+      }) 
+      setAlbumDeleted(true)
+    }
 
     const { photos } = album
 
-
   return (
     <Container>
-        <h1 className={styles.albumTitle}>{album.title}</h1>
+      {albumDeleted ? (
+          <>
+            <p> {album.title} was deleted </p>
+            <Link to="/albums">Go back to National Parks Gallery</Link>
+          </>
+          ) : (
+          <>
+           <h1 className={styles.albumTitle}>{album.title}</h1>
         
-        <div className={styles.imgList}>
-            {photos.map((photo) => {
+            <div className={styles.imgList}>
+              {photos.map((photo) => {
                 return <img className={styles.albumImg} src={photo.url} alt={photo.title} key={photo.id} />
-            })}
-        </div>
+              })}
+            </div>
 
-        <Link className={styles.goBackLink} to={'/albums'}>Go back to National Parks Gallery</Link>
+            <div className={styles.buttonsWrapper}>
+              <Link className={styles.goBackLink} to={'/albums'}>Go back to National Parks Gallery</Link>
+              <button className={styles.deleteBtn} onClick={removeAlbumHandler}>Delete National Park Gallery</button>
+            </div>
+          </>
+        )}
     </Container>
   )
 }
