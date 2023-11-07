@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Container from '../../Components/Container/Container'
 import { SERVER } from '../../config'
 import { Link } from 'react-router-dom'
+import styles from './AlbumsPage.module.css'
 
 const AlbumsPage = () => {
 
@@ -27,15 +28,14 @@ const AlbumsPage = () => {
 
   return (
     <Container>
-      <h1>Albums Page</h1>
-        <div className="albums-wrapper">
-        <ul className="albums-list">
+        <div className={styles.albumsWrapper}>
+        <ul className={styles.albumsList}>
           {albums.map((album) => (
-            <li key={albums.id} className="albums-item">
-             <Link to={`/albums/${album.id}`} className='album-link'>{album.title} (Go to National Park Gallery)</Link>  
-              <div className="random-image">
+            <li key={albums.id} className={styles.albumsItem}>
+             <Link className={styles.albumTitle} to={`/albums/${album.id}`}>{album.title}</Link>  
+              <div className={styles.randomImage}>
                <Link to={`/albums/${album.id}`}>
-                <img src={album.photos[0].url} alt="" key={album.id} />
+                <img className={styles.albumCoverImg} src={album.photos[0].url} alt="" key={album.id} />
                </Link>
               </div>
              

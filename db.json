@@ -99,6 +99,21 @@
       "countryMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918017.488195652!2d13.767642617111724!3d44.42031046997214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133441080add95ed%3A0xa0f3c024e1661b7f!2sKroatija!5e0!3m2!1slt!2slt!4v1699254907400!5m2!1slt!2slt"
     },
     {
+      "id": 2,
+      "name": "USA", 
+      "nationalParkId": 1, 
+      "continent": "North America", 
+      "topNationalParks": [
+         "Yellowstone National Park", 
+         "Zion National Park",
+         "Yosemite National Park", 
+         "Grand Canyon National Park", 
+         "Big Bend National Park"
+      ], 
+      "countryMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47681198.93769774!2d-161.3652026357663!3d38.32733122637569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sJungtin%C4%97s%20Valstijos!5e0!3m2!1slt!2slt!4v1699256740298!5m2!1slt!2slt"     
+     },
+
+    {
       "id": 3,
       "name": "Turkey",
       "nationalParkId": 3,

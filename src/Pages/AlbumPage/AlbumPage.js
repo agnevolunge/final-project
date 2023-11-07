@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { SERVER } from '../../config'
 import Container from '../../Components/Container/Container'
+import styles from './AlbumPage.module.css'
 
 const AlbumPage = () => {
 
@@ -33,15 +34,15 @@ const AlbumPage = () => {
 
   return (
     <Container>
-        <h1>{album.title}</h1>
+        <h1 className={styles.albumTitle}>{album.title}</h1>
         
-        <div className="photos-list">
+        <div className={styles.imgList}>
             {photos.map((photo) => {
-                return <img src={photo.url} alt={photo.title} key={photo.id} />
+                return <img className={styles.albumImg} src={photo.url} alt={photo.title} key={photo.id} />
             })}
         </div>
 
-        <Link to={'/albums'}>Go back to National Parks Gallery</Link>
+        <Link className={styles.goBackLink} to={'/albums'}>Go back to National Parks Gallery</Link>
     </Container>
   )
 }

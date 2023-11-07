@@ -3,8 +3,8 @@ body {
     font-size: 100%;
     font-size: 16px;
     line-height: 1.5;
-   
 }
+
 .parkCard {
     margin: 2rem auto;
     width: calc(50% - 15px);

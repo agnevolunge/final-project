@@ -6,6 +6,32 @@ body {
    
 }
 
+.countryCard {
+    width: calc(50% - 15px);
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    gap: 15px;
+    padding: 15px;
+}
+
+.countryCard:hover{
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    cursor: pointer;
+}
+
+.countryItem {
+    text-decoration: none;
+    color: rgb(5, 48, 17);
+    font-size: 24px;
+    font-weight: 600;
+}
+.countryItem:hover {
+    text-decoration: underline;
+    color: rgb(48, 104, 32);
+    cursor: pointer;
+}
+
 
 
 

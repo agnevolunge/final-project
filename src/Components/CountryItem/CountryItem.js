@@ -22,7 +22,7 @@ const CountryItem = (props) => {
 
   return (
     <div className={styles.countryCard}>
-        <Link className={styles.countryItem} to={`/countries/${id}`}>{name}</Link> ({continent})
+        <Link className={styles.countryItem} to={`/countries/${id}`}>{name} ({continent})</Link> 
         
         {topNationalParksElement}
     </div>
