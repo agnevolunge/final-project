@@ -1,0 +1,7 @@
+.countriesList {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 15px);
+    gap: 15px;
+    justify-content: space-around;
+}

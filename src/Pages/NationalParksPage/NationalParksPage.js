@@ -23,14 +23,10 @@ const NationalParksPage = () => {
 
 return (
     <Container>
-      <Link to="/createPark">Create new National Park</Link>
-      <h1>National Parks:</h1>
-      <div className={styles.parksWrapper}>
-      
+      <Link className={styles.createParkBtn} to="/createPark">Create new National Park</Link>
+  
         <NationalParksList nationalParks={nationalParks} />
       
-      </div>
-       
     </Container>
     
     

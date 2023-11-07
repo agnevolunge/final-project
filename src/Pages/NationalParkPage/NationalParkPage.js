@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { SERVER } from '../../config'
 import Container from '../../Components/Container/Container'
+import styles from "./NationalParkPage.module.css"
 
 const NationalParkPage = () => {
 
@@ -41,17 +42,18 @@ const NationalParkPage = () => {
           </>
         ) : (
           <>
-            <div className="park-wrapper">
-              <img src={nationalPark.photoUrl} alt="" key={id}></img>
-              <h1>{nationalPark.title}</h1>
-              <p>{nationalPark.body}</p>
+            <div className={styles.parkWrapper}>
+              <img className={styles.parkImg} src={nationalPark.photoUrl} alt="" key={id}></img>
+              <h1 className={styles.parkTitle}>{nationalPark.title}</h1>
+              <p className={styles.parkDescription}>{nationalPark.body}</p>
             </div>
         
-        <Link to={'/nationalParks'}>Go back to National Parks List</Link>
-        
-        <div className="delete-button">
-            <button onClick={removeParkHandler}>Delete National Park</button>
-        </div>
+            <div className={styles.buttonsWrapper}>
+              <Link className={styles.goBackLink} to={'/nationalParks'}>Go back to National Parks List</Link>
+              <button className={styles.deleteBtn} onClick={removeParkHandler}>Delete National Park</button>
+            </div>
+           
+            
        
           </>
         )}

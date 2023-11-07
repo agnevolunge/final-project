@@ -1,5 +1,6 @@
 import React from 'react'
 import CountryItem from '../CountryItem/CountryItem'
+import styles from './CountriesList.module.css'
 
 const CountriesList = ({ countries }) => {
 
@@ -7,15 +8,15 @@ const CountriesList = ({ countries }) => {
 
     if (countries.length > 0) {
       countriesElement = (
-        <ul className="countries-list">
+        <ul className={styles.countriesList}>
             {countries.map((country) => <CountryItem key={country.id} data={country}/>)}
         </ul>
       )
     }
   return (
-    <div>
+    <div className={styles.countryCard}>
     {countriesElement}
-</div>
+    </div>
   )
 }
 

@@ -8,14 +8,15 @@ const NationalParksList = ( {nationalParks} ) => {
 
     if (nationalParks.length > 0) {
       nationalParksElement = (
-        <ul className={styles.parksList}>
-            {nationalParks.map((nationalPark) => <NationalParkItem key={nationalPark.id} data={nationalPark}/>)}
-        </ul>
+          <ul className={styles.parksList}>
+              {nationalParks.map((nationalPark) => <NationalParkItem key={nationalPark.id} data={nationalPark}/>)}
+          </ul>
+        
       )
     }
 
   return (
-    <div>
+    <div className={styles.parksWrapper}>
         {nationalParksElement}
     </div>
   )

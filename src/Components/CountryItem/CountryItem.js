@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './CountryItem.module.css'
 
 const CountryItem = (props) => {
     const { id, continent, name, topNationalParks } = props.data
@@ -9,26 +10,22 @@ const CountryItem = (props) => {
     const topNationalParksTitle = topNationalParks.length === 0 ? `There are no National Parks in ${name}:` : `Top National Parks in ${name} are:`
 
     topNationalParksElement = (
-        <div className="top-parks-wrapper">
-            <h3>{topNationalParksTitle}</h3>
-            <ul>
+        <div className={styles.topParksWrapper}>
+            <h3 className={styles.topParkTitle}>{topNationalParksTitle}</h3>
+            <ul className={styles.topParksList}>
                 {topNationalParks.map((location, index) => (
-                    <li key={index}>{location}</li>
+                    <li className={styles.topParkItem} key={index}>{location}</li>
                 ))}
             </ul>
-
         </div>
     )
 
   return (
-    <>
-       <Link className="country-item" to={`/countries/${id}`}>{name}</Link> ({continent})
-        <li className="top-park-item">
-            <span>{topNationalParksElement}</span>
-  
-    </li>
-    </>
- 
+    <div className={styles.countryCard}>
+        <Link className={styles.countryItem} to={`/countries/${id}`}>{name}</Link> ({continent})
+        
+        {topNationalParksElement}
+    </div>
   )
 }
 

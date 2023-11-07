@@ -12,24 +12,30 @@ const NationalParkItem = (props) => {
 
     attractionsElement = (
         <div className={styles.attractionsWrapper}>
-            <h2>{attractionsTitle}</h2>
+            <h4 className={styles.attractionsTitle}>{attractionsTitle}</h4>
             <ul>
                 {attractions.map((location, index) => (
-                    <li key={index}>{location}</li>
+                    <li className={styles.attractionsItem} key={index}>{location}</li>
                 ))}
             </ul>
         </div>
     )
   
     return (
-    // <div className={styles.parkItemWrapper}>
-        <li className={styles.parkItem}>
-            <Link className={styles.parkTitle} to={`/nationalParks/${id}`}>{title}</Link>
-            <p className={styles.parkDescription}>{body}</p>
-            <img src={photoUrl} alt="" key={id}/>
-            <span>{attractionsElement}</span>
-        </li>
-    // </div>
+        <figure className={styles.parkCard}> 
+            <li className={styles.parkItem}>
+                <img className={styles.parkImg} src={photoUrl} alt="" key={id}/>
+
+                <div className={styles.parkCardContent}>
+                    <Link className={styles.parkTitle} to={`/nationalParks/${id}`}>{title}</Link>
+
+                    <p className={styles.parkDescription}>{body}</p>
+
+                    <span className={styles.parkAttractions}>{attractionsElement}</span>
+                </div>
+               
+            </li>
+        </figure>
     
   )
 }

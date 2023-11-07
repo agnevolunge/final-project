@@ -1,3 +1,7 @@
+body{
+    font-family: 'Lucida Sans', sans-serif;
+}
+
 #parkForm {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -18,29 +22,31 @@
 
 #parkForm .formControl label{
     font-weight: 600;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 #parkForm .createParkBtn{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
     border-radius: 4px ;
     color: rgb(23, 57, 14);
 }
 
+.createParkBtn:hover{
+    background-color: rgb(85, 177, 62);
+    cursor: pointer;
+    
+}
+
 .titleErrorMessage {
     color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
 }
 
 .bodyErrorMessage {
     color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
 }
 
 .errorMessage {
     color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
   }

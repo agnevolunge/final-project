@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { SERVER } from '../../config'
 import Container from '../../Components/Container/Container'
 import CountriesList from '../../Components/CountriesList/CountriesList'
+import styles from './CountriesPage.module.css'
 
 const CountriesPage = () => {
 
@@ -22,7 +23,7 @@ const CountriesPage = () => {
   return (
     <Container>
     <h1>Where to visit National Parks:</h1>
-    <div className="countries-wrapper">
+    <div className={styles.countriesWrapper}>
     
       <CountriesList countries={countries} />
     </div>
