@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import styles from "./NationalParkItem.module.css"
 
 const NationalParkItem = (props) => {
     const { id, title, body, photoUrl, attractions } = props.data
@@ -10,7 +11,7 @@ const NationalParkItem = (props) => {
     const attractionsTitle = attractions.length === 1 ? `Main tourist attraction of ${title} is:` : `Main tourist attractions of ${title} are:`
 
     attractionsElement = (
-        <div className="attractions-wrapper">
+        <div className={styles.attractionsWrapper}>
             <h2>{attractionsTitle}</h2>
             <ul>
                 {attractions.map((location, index) => (
@@ -21,13 +22,15 @@ const NationalParkItem = (props) => {
     )
   
     return (
-     <li className="park-item">
-        <Link className="park-title" to={`/nationalParks/${id}`}>{title}</Link>
-        <p className="park-description">{body}</p>
-        <img src={photoUrl} alt="" key={id}/>
-        <span>{attractionsElement}</span>
-      
-     </li>
+    // <div className={styles.parkItemWrapper}>
+        <li className={styles.parkItem}>
+            <Link className={styles.parkTitle} to={`/nationalParks/${id}`}>{title}</Link>
+            <p className={styles.parkDescription}>{body}</p>
+            <img src={photoUrl} alt="" key={id}/>
+            <span>{attractionsElement}</span>
+        </li>
+    // </div>
+    
   )
 }
 

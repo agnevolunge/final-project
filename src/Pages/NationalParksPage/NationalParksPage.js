@@ -3,7 +3,7 @@ import Container from '../../Components/Container/Container'
 import { SERVER } from '../../config'
 import NationalParksList from '../../Components/NationalParksList/NationalParksList'
 import { Link } from 'react-router-dom'
-import "./NationalParksPage.css"
+import  styles from "./NationalParksPage.module.css"
 
 
 const NationalParksPage = () => {
@@ -25,7 +25,7 @@ return (
     <Container>
       <Link to="/createPark">Create new National Park</Link>
       <h1>National Parks:</h1>
-      <div className="parks-wrapper">
+      <div className={styles.parksWrapper}>
       
         <NationalParksList nationalParks={nationalParks} />
       

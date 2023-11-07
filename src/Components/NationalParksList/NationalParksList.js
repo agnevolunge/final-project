@@ -1,5 +1,6 @@
 import React from 'react'
 import NationalParkItem from '../NationalParkItem/NationalParkItem'
+import styles from "./NationalParksList.module.css"
 
 const NationalParksList = ( {nationalParks} ) => {
 
@@ -7,7 +8,7 @@ const NationalParksList = ( {nationalParks} ) => {
 
     if (nationalParks.length > 0) {
       nationalParksElement = (
-        <ul className="parks-list">
+        <ul className={styles.parksList}>
             {nationalParks.map((nationalPark) => <NationalParkItem key={nationalPark.id} data={nationalPark}/>)}
         </ul>
       )

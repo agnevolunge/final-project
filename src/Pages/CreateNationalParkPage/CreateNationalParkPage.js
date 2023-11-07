@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Container from '../../Components/Container/Container'
 import { SERVER } from '../../config'
-import "./CreateNationalParkPage.css"
+import styles from "./CreateNationalParkPage.module.css"
 
 const CreateNationalParkPage = () => {
 
@@ -89,8 +89,8 @@ const CreateNationalParkPage = () => {
     <Container>
         <h1>Create new National Park</h1>
 
-        <form id="park-form" onSubmit={newParkHandler}>
-            <div className="form-control">
+        <form id={styles.parkForm} onSubmit={newParkHandler}>
+            <div className={styles.formControl}>
                 <label htmlFor="title">National Park Title:</label>
                 <input
                 type="text"
@@ -99,10 +99,10 @@ const CreateNationalParkPage = () => {
                 value={title}
                 onChange={titleHandler}
                 />
-                <span className="title-error-message">{titleError}</span>
+                <span className={styles.titleErrorMessage}>{titleError}</span>
             </div>
 
-            <div className="form-control">
+            <div className={styles.formControl}>
               <label htmlFor="body">National Park Description:</label>
                 <textarea 
                   rows={5}
@@ -111,10 +111,10 @@ const CreateNationalParkPage = () => {
                   value={body}
                   onChange={bodyHandler}
                 />
-                <span className="body-error-message">{bodyError}</span>
+                <span className={styles.bodyErrorMessage}>{bodyError}</span>
             </div>
 
-            <div className="form-control">
+            <div className={styles.formControl}>
               <label htmlFor="attractions">National Park Attractions:</label>
                <textarea
                  rows={5}
@@ -125,11 +125,11 @@ const CreateNationalParkPage = () => {
                />
             </div>
 
-            <button className="create-park-btn" type="submit">Create National Park</button> 
+            <button className={styles.createParkBtn} type="submit">Create National Park</button> 
 
             {invalidForm && (
-              <div className="error-wrapper">
-               <span className="error-message">
+              <div className={styles.errorWrapper}>
+               <span className={styles.errorMessage}>
                 Not all required data has been entered.
               </span>
              </div>
