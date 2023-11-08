@@ -24,7 +24,7 @@ const CountriesPage = () => {
   return (
     <Container>
     <Link className={styles.createCountryBtn} to="/createCountry">Create new Country</Link>
-    <h1>Where to visit National Parks:</h1>
+    <h1 className={styles.countriesPageTitle}>Where to visit National Parks:</h1>
     <div className={styles.countriesWrapper}>
     
       <CountriesList countries={countries} />

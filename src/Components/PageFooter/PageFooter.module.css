@@ -27,8 +27,6 @@ body {
     list-style: none;
     justify-content: space-between;
     padding-right: 40px;
- 
-    
 }
 
 .footerWrapper .footerElementItem a {
@@ -43,3 +41,14 @@ body {
 .footerWrapper .footerElementItem a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 599px) {
+    .footerWrapper .footerElementsList {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+        padding-right: 40px;
+    }
+  }

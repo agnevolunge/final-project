@@ -12,3 +12,9 @@
 .createCountryBtn:hover {
     background-color: rgb(35, 90, 19);
 }
+
+@media (max-width: 549px) {
+.countriesPageTitle {
+    font-size: 24px;
+}
+}

@@ -5,3 +5,10 @@
     gap: 15px;
     justify-content: space-around;
 }
+
+@media (max-width: 749px) {
+    .countriesList {
+        display: flex;
+        flex-direction: row;
+    }
+  }
