@@ -1,0 +1,51 @@
+body{
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+#countryForm {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 30px;
+    background-color: white;
+    width: 50%;
+  }
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#countryForm .formControl label{
+    font-weight: 600;
+    
+}
+#countryForm .createCountryBtn{
+    font-weight: 600;
+    border-radius: 4px ;
+    color: rgb(23, 57, 14);
+}
+
+.createCountryBtn:hover{
+    background-color: rgb(85, 177, 62);
+    cursor: pointer;
+    
+}
+
+.titleErrorMessage {
+    color: red;
+    font-size: 14px;
+}
+
+.continentErrorMessage {
+    color: red;
+    font-size: 14px;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+  }

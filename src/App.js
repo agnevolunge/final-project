@@ -10,6 +10,7 @@ import AlbumPage from './Pages/AlbumPage/AlbumPage';
 import CountryPage from './Pages/CountryPage/CountryPage';
 import PageFooter from './Components/PageFooter/PageFooter';
 import CreateNationalParkPage from './Pages/CreateNationalParkPage/CreateNationalParkPage';
+import CreateCountryPage from './Pages/CreateCountryPage/CreateCountryPage';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
 
         <Route path="/countries" element={<CountriesPage />} /> 
         <Route path="/countries/:id" element={<CountryPage />} /> 
+        <Route path="/createCountry" element={<CreateCountryPage />} /> 
+
         
         <Route path="/albums" element={<AlbumsPage />} /> 
         <Route path="/albums/:id" element={<AlbumPage />} /> 
